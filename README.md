@@ -8,7 +8,6 @@ Gzipping a folder using pigz (parallel version of gzip):
 `Create archive [c] | Verbose flag [v] | Highest compression ratio (-1 to -9)`    
 
 
-
 ## Disk Management
 How much space did files and folders of current directory consume?   
 `du -ah --max-depth=1 --exclude=./folder1 --exclude=./file1`    
@@ -20,4 +19,9 @@ Displaying available information of media files using ffprobe(part of ffmpeg pro
 `ffprobe -v error -show-streams`     
 `Setting log level [v] | Flag to force ffprobe to show metadata of all streams [show-streams]`     
 
+
+## File Transfer
+Resumable rsync transfer over ssh     
+`rsync -avhP -e ssh source:/path/to/file dest/path/to/file`         
+`Depicting archive flag [a] | Verbose flag [v] | human readable sizes flag [h] | specifyig picked program in remote host to ssh (over ssh) [e]`     
 
