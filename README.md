@@ -5,7 +5,7 @@ The description of command line options will be provided in the next line in ord
 ## Archive
 Gzipping a folder using pigz (parallel version of gzip):     
 `tar cv /path/to/source/directory | pigz -9 > /path/to/dest/file.tar.gz`     
-`Create archive [c] | Verbose flag [v] | Highest compression ratio (-1 to -9)`    
+`Create archive [c] | Verbose flag [v] | Compression ratio (-1 to -9)`    
 
 
 ## Disk Management
