@@ -7,6 +7,12 @@ Gzipping a folder using pigz (parallel version of gzip):
 `tar cv /path/to/source/directory | pigz -9 > /path/to/dest/file.tar.gz`     
 `Create archive [c] | Verbose flag [v] | Compression ratio (-1 to -9)`    
 
+## Security
+Encrypting a file using `gpg`
+`gpg -c ./test.mp4`
+
+Descrypting a file using `gpg`
+`gpg -d ./test.mp4.gpg > ./test.mp4`
 
 ## Disk Management
 How much space did files and folders of current directory consume?   
