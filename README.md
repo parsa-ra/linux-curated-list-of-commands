@@ -31,3 +31,8 @@ Resumable rsync transfer over ssh
 `rsync -avhP -e ssh source:/path/to/file dest/path/to/file`         
 `Depicting archive flag [a] | Verbose flag [v] | human readable sizes flag [h] | specifyig picked program in remote host to ssh (over ssh) [e]`     
 
+## Misc 
+Generate Random Strings
+`tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' </dev/urandom | head -c 64  ; echo`
+
+
