@@ -25,6 +25,8 @@ Displaying available information of media files using ffprobe(part of ffmpeg pro
 `ffprobe -v error -show-streams`     
 `Setting log level [v] | Flag to force ffprobe to show metadata of all streams [show-streams]`     
 
+Encoding videos using vaapi hardware accelerated libraries
+`ffmpeg -hwaccel vaapi -hwaccel_output_format vaapi -i /input/file.mp4 -c:v hevc_vaapi /output/file.mp4`
 
 ## File Transfer
 Resumable rsync transfer over ssh     
