@@ -35,6 +35,7 @@ Resumable rsync transfer over ssh
 
 ## Misc 
 Generate Random Strings
-`tr -dc "A-Za-z0-9!#$%&'()*+,-./:;<=>?@[\]^_{|}~" </dev/urandom | head -c 64  ; echo`
-
+```bash
+tr -dc "A-Za-z0-9%&'()*+,-./:;<=>?@[\]^_{|}~" </dev/urandom | head -c 16  ; echo
+```
 
